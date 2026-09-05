@@ -1,5 +1,7 @@
 # Experiment 3: DML Commands
+NAME:MOHANA K.V.S.L
 
+REG NO:212224240093
 ## AIM
 To study and implement DML (Data Manipulation Language) commands.
 

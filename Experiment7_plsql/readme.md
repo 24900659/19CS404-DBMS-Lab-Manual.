@@ -95,7 +95,7 @@ END;
 - Declare the variable `n` to indicate how many terms to generate.
 - Initialize the first two Fibonacci numbers (0 and 1).
 - Use a loop to generate the next terms using the formula `c = a + b`.
-- Print each term in the series.
+- Print each term in the series. 
 
 **Expected Output:**  
 n = 7  

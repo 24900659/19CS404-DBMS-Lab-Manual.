@@ -1,7 +1,7 @@
 # Experiment 6: Joins
 
-### Name : RABI BASKAR PRABURAJAN
-### Reg No :212224040257
+### Name : MOHANA K.V.S.L
+### Reg No :212224240093
 
 ## AIM
 To study and implement different types of joins.

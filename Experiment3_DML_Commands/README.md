@@ -1,5 +1,6 @@
 # Experiment 3: DML Commands
-
+NAME: MOHANA K.V.S.L
+REG NO: 212224240093
 ## AIM
 To study and implement DML (Data Manipulation Language) commands.
 
@@ -11,7 +12,7 @@ These are three type of INSERT INTO queries which are as
 A)Inserting a single record
 **Syntax (Single Row):**
 ```sql
-INSERT INTO table_name (field_1, field_2, ...) VALUES (value_1, value_2, ...);
+
 ```
 **Syntax (Multiple Rows):**
 ```sql
@@ -47,123 +48,158 @@ SELECT column1, column2 FROM table_name WHERE condition;
 ```
 **Question 1**
 --
--- Paste Question 1 here
+<img width="806" height="553" alt="image" src="https://github.com/user-attachments/assets/4eb0edde-f951-46ad-81fb-829b3edfaf73" />
+
 
 ```sql
--- Paste your SQL code below for Question 1
+delete from Doctors
+where specialization is null;
 ```
 
 **Output:**
+<img width="867" height="958" alt="image" src="https://github.com/user-attachments/assets/211d2213-271b-4b4c-ad89-c700b594393b" />
 
-![Output1](output.png)
+
 
 **Question 2**
 ---
--- Paste Question 2 here
+<img width="870" height="582" alt="image" src="https://github.com/user-attachments/assets/79fc9aee-0c60-4a36-8810-50a86bbd0f5e" />
 
 ```sql
--- Paste your SQL code below for Question 2
+delete from Customer
+where (GRADE > 2 AND PAYMENT_AMT < (SELECT AVG(PAYMENT_AMT) FROM Customer)) OR OUTSTANDING_AMT>8000;
 ```
 
 **Output:**
+<img width="862" height="717" alt="image" src="https://github.com/user-attachments/assets/46281146-8608-402a-93eb-bb593ca9a232" />
 
-![Output2](output.png)
+
 
 **Question 3**
 ---
--- Paste Question 3 here
+<img width="892" height="722" alt="image" src="https://github.com/user-attachments/assets/d3943093-cfc4-4f41-99b3-45d4dbaa74ff" />
+
 
 ```sql
--- Paste your SQL code below for Question 3
+SELECT * FROM orders
+where not  ((ord_date='2012-08-17' or customer_id > 3005) and purch_amt < 1000);
 ```
 
 **Output:**
+<img width="851" height="811" alt="image" src="https://github.com/user-attachments/assets/14689161-4569-4e95-a2ba-19d15e49c7ac" />
 
-![Output3](output.png)
+
 
 **Question 4**
 ---
--- Paste Question 4 here
+<img width="862" height="520" alt="image" src="https://github.com/user-attachments/assets/c874db06-ea7b-4e33-bfb6-81caae2b72d0" />
+
 
 ```sql
--- Paste your SQL code below for Question 4
+select customer_id, cust_name, city, grade,salesman_id from customer
+where city='New York' or grade>200;
 ```
 
 **Output:**
 
-![Output4](output.png)
+<img width="862" height="557" alt="image" src="https://github.com/user-attachments/assets/a44f1499-a71d-4970-8bf3-c21703ec31a7" />
+
 
 **Question 5**
 ---
--- Paste Question 5 here
+
+<img width="887" height="642" alt="image" src="https://github.com/user-attachments/assets/99ab717e-a30c-4896-a652-c833a8803d4a" />
 
 ```sql
--- Paste your SQL code below for Question 5
+select id , value1,
+case 
+when value1 > 0 then 'Positive'
+when value1 < 0 then 'Negative'
+else 'Zero'
+end as value_status
+from Calculations;
 ```
 
 **Output:**
+<img width="850" height="551" alt="image" src="https://github.com/user-attachments/assets/b49c2601-e04c-48a6-a671-92e90d14ddb0" />
 
-![Output5](output.png)
+
 
 **Question 6**
 ---
--- Paste Question 6 here
+
+<img width="850" height="512" alt="image" src="https://github.com/user-attachments/assets/d3b822cb-8456-4b68-9c3d-77c7a354947e" />
 
 ```sql
--- Paste your SQL code below for Question 6
+select * from EmployeeInfo
+limit 5 offset 4;
 ```
 
 **Output:**
+<img width="867" height="320" alt="image" src="https://github.com/user-attachments/assets/34b377e1-5c34-4b99-9ed7-1caaa2bddfe0" />
 
-![Output6](output.png)
 
 **Question 7**
 ---
--- Paste Question 7 here
+<img width="842" height="606" alt="image" src="https://github.com/user-attachments/assets/aacf200d-8ffd-4b2f-a71b-d6e5bf1e4bb1" />
+
+
 
 ```sql
--- Paste your SQL code below for Question 7
+update Products 
+set category = 'Household'
+where product_name like '%Detergent%';
 ```
 
 **Output:**
 
-![Output7](output.png)
+<img width="852" height="583" alt="image" src="https://github.com/user-attachments/assets/96599c44-e3ed-4645-8874-7cae6a345216" />
+
 
 **Question 8**
 ---
--- Paste Question 8 here
+
+<img width="877" height="655" alt="image" src="https://github.com/user-attachments/assets/b5d809e0-8b3e-46fd-82d7-528bf14b6e22" />
 
 ```sql
--- Paste your SQL code below for Question 8
+update Products 
+set category = 'Household'
+where product_name like '%Detergent%';
 ```
 
 **Output:**
+<img width="861" height="327" alt="image" src="https://github.com/user-attachments/assets/72783be4-aee5-445f-93f9-c99bd3b2fc64" />
 
-![Output8](output.png)
+
 
 **Question 9**
----
--- Paste Question 9 here
+```
+<img width="857" height="693" alt="image" src="https://github.com/user-attachments/assets/d55ec671-4e4c-41ef-b66c-fa610c8be6cc" />
+
 
 ```sql
--- Paste your SQL code below for Question 9
+delete from customer
+where GRADE <> 3;
 ```
 
 **Output:**
+<img width="836" height="582" alt="image" src="https://github.com/user-attachments/assets/a69b658e-3e5a-4756-9257-642d3988e702" />
 
-![Output9](output.png)
 
 **Question 10**
 ---
--- Paste Question 10 here
+<img width="892" height="520" alt="image" src="https://github.com/user-attachments/assets/d36e980d-22a0-4dac-ba88-bdc8491fd8f2" />
+
 
 ```sql
--- Paste your SQL code below for Question 10
+update Products
+set reorder_lvl = 20 
+where (quantity<10 and category='Snacks');
 ```
 
 **Output:**
+<img width="850" height="627" alt="image" src="https://github.com/user-attachments/assets/9673bcda-3301-4579-b31b-54cc0428b1cc" />
 
-![Output10](output.png)
 
 ## RESULT
 Thus, the SQL queries to implement DML commands have been executed successfully.
